@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RAUW amsterdam</string>
+    <string name="exit_press_back_twice_message">Klik nog een keer om de app te verlaten.</string>
+
+    <!--login.xml-->
+    <string name="login_name">Inloggen</string>
+    <string name="login_hint">E-mailadres</string>
+    <string name="password_hint">Wachtwoord</string>
+    <string name="forgot_password">Wachtwoord?</string>
+    <string name="register">Registreren</string>
+
+    <!--password_forgot.xml-->
+    <string name="send_password">Verzend wachtwoord</string>
+    <string name="back_login">Terug</string>
+
+    <!--register.xml-->
+    <string name="first_name">Voornaam</string>
+    <string name="last_name">Achternaam</string>
+    <string name="phone_number">06-nummer</string>
+    <string name="date_of_birth">Geboortedatum</string>
+    <string name="date_birth">yyyymmdd</string>
+    <string name="register_now">Registreren</string>
+
+    <!--navigation drawer array-->
+    <string-array name="drawer_array">
+        <item>Mijn Profiel</item>
+        <item>Algemene Voorwaarden</item>
+        <item>Uitloggen</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+
+
+</resources>

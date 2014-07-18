@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarTabStyle">@style/AppTheme.Tab</item>
+        <item name="actionBarTabStyle">@style/AppTheme.Tab</item>
+        <item name="android:gravity">center</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/list_activated_background</item>
+
+
+    </style>
+
+    <style name="AppTheme.Tab">
+        <item name="android:background">@drawable/tab_bar_background</item>
+    </style>
+
+</resources>
