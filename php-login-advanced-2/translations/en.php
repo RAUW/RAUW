@@ -32,6 +32,7 @@ define("MESSAGE_PASSWORD_RESET_MAIL_SUCCESSFULLY_SENT", "Password reset mail suc
 define("MESSAGE_PASSWORD_TOO_SHORT", "Password has a minimum length of 6 characters");
 define("MESSAGE_PASSWORD_WRONG", "Wrong password. Try again.");
 define("MESSAGE_PASSWORD_WRONG_3_TIMES", "You have entered an incorrect password 3 or more times already. Please wait 30 seconds to try again.");
+define("MESSAGE_PHONE_TOO_LONG", "Vul 10 cijfers in als telefoonnummer.");
 define("MESSAGE_REGISTRATION_ACTIVATION_NOT_SUCCESSFUL", "Sorry, no such id/verification code combination here...");
 define("MESSAGE_REGISTRATION_ACTIVATION_SUCCESSFUL", "Activation was successful! You can now log in!");
 define("MESSAGE_REGISTRATION_FAILED", "Sorry, your registration failed. Please go back and try again.");
@@ -77,5 +78,5 @@ define("WORDING_REMEMBER_ME", "Keep me logged in (for 2 weeks)");
 define("WORDING_REQUEST_PASSWORD_RESET", "Request a password reset. Enter your username and you'll get a mail with instructions:");
 define("WORDING_RESET_PASSWORD", "Reset my password");
 define("WORDING_SUBMIT_NEW_PASSWORD", "Submit new password");
-define("WORDING_USEREMAIL", "Your email");
+define("WORDING_USERNAME", "Username");
 define("WORDING_YOU_ARE_LOGGED_IN_AS", "You are logged in as ");

@@ -22,7 +22,7 @@ if (version_compare(PHP_VERSION, '5.3.7', '<')) {
 require_once('config/config.php');
 
 // include the to-be-used language, english by default. feel free to translate your project and include something else
-require_once('translations/en.php');
+require_once('translations/nl.php');
 
 // include the PHPMailer library
 require_once('libraries/PHPMailer.php');
@@ -40,8 +40,12 @@ if ($login->isUserLoggedIn() == true) {
     // for demonstration purposes, we simply show the "you are logged in" view.
     include("views/logged_in.php");
 
+echo "{\"success\": 1, \"message\": \"Login success!!\"}";
+
 } else {
     // the user is not logged in. you can do whatever you want here.
     // for demonstration purposes, we simply show the "you are not logged in" view.
     include("views/not_logged_in.php");
+
+echo "{\"success\": 0, \"message\": \"Login failed!!\"}";
 }
