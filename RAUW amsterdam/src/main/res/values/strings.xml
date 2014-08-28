@@ -3,11 +3,14 @@
 
     <string name="app_name">RAUW amsterdam</string>
     <string name="exit_press_back_twice_message">Klik nog een keer om de app te verlaten.</string>
+    <string name="log_out">Je bent nu uitgelogd</string>
 
     <!--login.xml-->
     <string name="login_name">Inloggen</string>
     <string name="login_hint">E-mailadres</string>
-    <string name="password_hint">Wachtwoord</string>
+    <string name="remember_login">Inloggegevens onthouden</string>
+    <string name="password_hint">Wachtwoord (minimaal 6 tekens)</string>
+    <string name="password_hint_repeat">Wachtwoord herhalen</string>
     <string name="forgot_password">Wachtwoord?</string>
     <string name="register">Registreren</string>
 
@@ -17,21 +20,158 @@
 
     <!--register.xml-->
     <string name="first_name">Voornaam</string>
+    <string name="middle_name">tussen</string>
     <string name="last_name">Achternaam</string>
     <string name="phone_number">06-nummer</string>
     <string name="date_of_birth">Geboortedatum</string>
     <string name="date_birth">yyyymmdd</string>
     <string name="register_now">Registreren</string>
 
+    <!--action bar-->
+    <string name="action_facebook">Ga naar Facebook!</string>
     <!--navigation drawer array-->
-    <string-array name="drawer_array">
-        <item>Mijn Profiel</item>
+    <string-array name="navigation_drawer_items_array">
+        <item>Instellingen</item>
+        <item>Veel Gestelde Vragen</item>
         <item>Algemene Voorwaarden</item>
         <item>Uitloggen</item>
     </string-array>
+
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
+    <!--profiel-->
+    <string name="welcome">Welkom /</string>
+    <string name="welcome_name">Niels</string>
+    <string name="trainingen">trainingen</string>
+    <string name="tegoed">/// tegoed</string>
+    <string name="saldo">03</string>
+    <string name="verloop_beschrijving">RAUW // tot en met</string>
+    <string name="verloop_datum">23 mei 2015</string>
+    <string name="change_pic">Wijzig foto</string>
+    <string name="naar_trainingen">Aanmelden voor RAUW ></string>
+
+    <!--trainingen-->
+    <string name="week_number">WK35//</string>
+    <string name="t1_date_month">AUG</string>
+    <string name="t1_date_day">26</string>
+    <string name="t1_type_training">RAUW training</string>
+    <string name="t1_day_training">Vandaag</string>
+    <string name="t1_training_tussenvoegsel">//</string>
+    <string name="t1_time_training">19:15</string>
+    <string name="t1_know_more">></string>
+    <string name="t1_location_training">Knijn Bowling, AMS</string>
+    <string name="t1_join_training">Aanmelden</string>
+    <string name="t2_date_month">AUG</string>
+    <string name="t2_date_day">28</string>
+    <string name="t2_type_training">RAUW training</string>
+    <string name="t2_day_training">Donderdag</string>
+    <string name="t2_training_tussenvoegsel">//</string>
+    <string name="t2_time_training">19:15</string>
+    <string name="t2_know_more">></string>
+    <string name="t2_location_training">De Mirandabad, AMS</string>
+    <string name="t2_join_training">Aanmelden</string>
+    <string name="t3_date_month">AUG</string>
+    <string name="t3_date_day">31</string>
+    <string name="t3_type_training">RAUW training</string>
+    <string name="t3_day_training">Zondag</string>
+    <string name="t3_training_tussenvoegsel">//</string>
+    <string name="t3_time_training">11:00</string>
+    <string name="t3_know_more">></string>
+    <string name="t3_location_training">De Mirandabad, AMS</string>
+    <string name="t3_join_training">Aanmelden</string>
+    <string name="next_week_number">//WK36</string>
+
+    <!--contact-->
+    <string name="text_contact">Voor al je: vragen // sterke verhalen ///
+        ideeën / mogelijke samenwerkings-verbanden
+        // hersenspinsels / en \n/ positieve feedback //</string>
+    <string name="contact_mail">info@rauwamsterdam.com</string>
+    <string name="contact_phone">+31 6 12 40 95 37</string>
+
+    <!--instellingen-->
+    <string name="login_hint_wijzig">Nieuw E-mailadres</string>
+    <string name="phone_number_wijzig">Nieuw 06-nummer</string>
+    <string name="knop_wijzig_gegevens">Wijzig bovenstaand</string>
+    <string name="password_wijzig_oud">Je oude wachtwoord</string>
+    <string name="password_wijzig_nieuw">Nieuw wachtwoord</string>
+    <string name="password_wijzig_nieuw_repeat">Herhaal nieuw wachtwoord</string>
+    <string name="knop_wijzig_wachtwoord">Wijzig wachtwoord</string>
+
+    <!--veel gestelde vragen-->
+    <string name="faq">01 Hoe koop ik een RAUW RITTENBAND?\nJe hebt de keuze uit 5, 10 en 15
+        trainingen. Stuur ons een e-mail met daarin je volledige naam, telefoonnummer,
+        geboortedatum en rittenband-keuze. Je krijgt je RAUW RITTENBAND persoonlijk tijdens de
+        eerstvolgende training. Het is ook mogelijk om je aankoop voor of na een training te doen,
+        dus zorg dat je contant en gepast geld bij je hebt.\n\n02 Hoe lang is mijn RAUW RITTENBAND
+        geldig?\nJe RAUW RITTENBAND is geldig tot en met 23 mei 2015, omdat we de boel vanaf
+        die datum op de schop gooien. Hoe precies? Dat hoor je snel!\n\n03 Kan ik eerst een proefles
+        volgen?\nJazeker! Een proefles is gratis. Het is wel belangrijk om jezelf aan te melden
+        voor een van onze trainingen, via Facebook of mail/telefoon.\n\n04 Hoe kan ik meedoen aan
+        een training?\nLIKE ons op Facebook en zet jezelf AANWEZIG bij de training naar keuze,
+        te vinden bij EVENEMENTEN op onze Facebook pagina. Geregeld! Kom op tijd. Afmelden kan
+        tot één uur voor aanvang van de training.\n\n05 Mijn conditie is niet best, kan ik
+        meedoen?\nEen redelijke basis-hardloopconditie (tien minuten achter elkaar joggen zonder
+        buiten adem te raken) en een gezonde dosis doorzettingsvermogen is zeker nodig om mee te
+        kunnen komen met de RAUW trainingen. Heb je dit niet? Vrees niet! Op elke eerste
+        woensdagavond van de maand (starttijd 19:15 uur) hebben we Easy Wednesdays: de ideale
+        instapmogelijkheid alvorens mee te doen met onze reguliere trainingen. Daarnaast hebben
+        we RAUW intro programma, waarin we je in 9 weken klaar stomen voor de wekelijkse RAUW
+        trainingen. Dit programma gaat van start bij voldoende animo, dus laat ons weten dat je
+        geïnteresseerd bent!\n\n06 Zijn er ook trainingen bij slecht weer?\nJazeker, de trainingen
+        gaan vrijwel altijd door! Mocht het onverantwoord zijn om mensen over open vlakten te
+        leiden, zoals bij onweer, worden de lessen afgelast. In dat geval is het aan te raden om
+        het Trainingsevenement in de gaten te houden op Facebook.\n\n07 Hoe weet ik of een training
+        afgelast wordt?\nAls er een training wordt afgelast, word je via Facebook op de hoogte
+        gebracht. We plaatsen een bericht in het EVENEMENT (de training in dit geval) wat
+        komt te vervallen. Mocht het voorkomen, dan doen we dit natuurlijk zo snel mogelijk.\n\n08
+        Waar laat ik mijn spullen tijdens de training?\nNiet-waardevolle spullen gaan in onze auto.
+        Sleutels en telefoons blijven tijdens de training bij één van de trainers. Probeer
+        het meenemen van extra spullen zoveel mogelijk te beperken, aangezien RAUW niet
+        aansprakelijk is voor verlies en/of diefstal.\n\n09 Zijn er ergens kleedkamers en/of
+        toiletten?\nRAUW faciliteert enkel de trainingen. Onze sporters komen en gaan in
+        sportkleding. Vaak is een toiletbezoek voor- of na aanvang van de training mogelijk,
+        bij cafés die zich in de buurt van het vertrekpunt bevinden.\n\n10 Welke oefeningen mag ik
+        verwachten tijdens RAUW?\nWe trainen met stadse obstakels, zoals bankjes en klimrekken,
+        eigen lichaamsgewicht en elkaar. Hier komen nagenoeg geen materialen bij kijken. Je kunt
+        basisoefeningen als push-ups, dips en squats verwachten, maar ook intervaloefeningen als
+        mountain climbers en sprints. Wij zorgen voor afwisseling, zodat alle spiergroepen aan
+        bod komen.</string>
+
+    <!--algemene voorwaarden-->
+    <string name="algemene_voorwaarden">01 RAUW amsterdam behoudt zich het recht voor
+        een training bij onvoldoende belangstelling te annuleren. In overleg wordt naar
+        een alternatief gezocht. Bij gevaarlijke weersomstandigheden, waaronder onweer, storm,
+        extreme warmte, sneeuw of ijzel, kan een training worden afgelast.\n\n02 Betalingen dienen
+        vooraf plaats te vinden, op de daarvoor bestemde rekening. Aanmelding voor de training
+        dient gedaan te worden via de RAUW amsterdam Facebook pagina.
+        Aanmelding via dit kanaal is verplicht. Afmelden kan uiterlijk één uur voor aanvang van
+        de training, via telefoon (SMS/Whatsapp) of via de Facebook pagina.\n\n03 Deelname aan
+        een training geschiedt geheel op eigen risico. RAUW amsterdam is niet
+        aansprakelijk voor enige blessure of andere schade die de deelnemers oplopen tijdens of
+        ten gevolge van een training. Trainingsadviezen zijn altijd vrijblijvend en worden voor
+        eigen risico opgevolgd. Ook is RAUW amsterdam niet aansprakelijk voor schade aan en/of
+        vermissing van persoonlijke eigendommen door welke oorzaak ook, ontstaan tijdens of in
+        verband met de door het bedrijf georganiseerde activiteiten.\n\n04 RAUW amsterdam is
+        gerechtigd het trainingsrooster en/of trainingslocaties tussentijds
+        aan te passen zonder opgaaf van reden.\n\n05 Een training van RAUW amsterdam is
+        intensief en blessuregevoelig. Deelnemers dienen
+        zelf in te schatten of ze geschikt zijn voor deelname aan de trainingen. Indien een
+        deelnemer gezondheidsklachten of overgewicht heeft, of indien een deelnemer een andere
+        reden heeft om te twijfelen aan trainingsdeelname, is het raadzaam om eerst advies in te
+        winnen bij een arts.\n\n06 RAUW amsterdam behoudt zich het recht voor om naar zijn
+        beoordeling ongeschikte
+        deelnemers uit te sluiten van deelname aan een training.\n\n07 RAUW amsterdam behoudt
+        zich het recht voor om deelnemers die zich misdragen, op welke
+        wijze dan ook, deelname aan een training van RAUW amsterdam te ontzeggen.\n\n08 Deelnemers
+        verklaren geheel op eigen risico en op eigen verantwoording deel te nemen
+        aan de trainingen van RAUW amsterdam.\n\n09 Deelnemers stemmen ermee in dat hun gegevens
+        door RAUW amsterdam bewaard zullen worden.
+        RAUW amsterdam verklaart hierbij dat de gegevens noch ter inzage aan derden noch verkocht
+        zullen worden met het oog op de privacywetgeving.\n\n10 Een RAUW RITTENBAND is geldig tot
+        en met 23 mei 2015.\n\n11 Bij aankoop van een RAUW RITTENBAND gaat de deelnemer akkoord
+        met deze voorwaarden.
+    </string>
 
 
 </resources>

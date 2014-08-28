@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_terms" >
+
+    <ScrollView android:id="@+id/textAreaScroller"
+        android:layout_width="fill_parent"
+        android:layout_height="330dp"
+        android:layout_marginTop="110dp"
+        android:background="#22000000"
+        android:scrollbars="vertical"
+        android:requiresFadingEdge="vertical"
+        android:fadingEdgeLength="70dp"
+        android:scrollbarThumbVertical="@drawable/scrollbar"
+        android:scrollbarSize="5dp">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:text="@string/algemene_voorwaarden"
+            android:gravity="left"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" />
+        </ScrollView>
+
+    <!--terug naar MainActivity-->
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:text="@string/back_login"
+        android:id="@+id/buttonBackLogin"
+        android:background="@drawable/custom_instellingen"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:singleLine="false"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:onClick="clickBackLogin"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+</RelativeLayout>

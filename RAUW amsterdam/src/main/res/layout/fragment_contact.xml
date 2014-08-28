@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_contact"
+    android:gravity="top">
+
+
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonContactMail"
+            android:background="@drawable/custom_instellingen"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageContactMail"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_mail_3"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_mail_text"
+            android:text="@string/contact_mail"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif"
+            android:layout_toRightOf="@+id/imageContactMail"
+            android:gravity="left"
+            android:padding="15dp"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonContactPhone"
+            android:background="@drawable/custom_instellingen"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/imageContactPhone"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_phone_3"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_phone_text"
+            android:text="@string/contact_phone"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:fontFamily="sans-serif"
+            android:gravity="left"
+            android:padding="15dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageContactPhone" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

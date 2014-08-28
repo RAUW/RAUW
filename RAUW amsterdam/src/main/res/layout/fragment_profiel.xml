@@ -3,11 +3,166 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_3_groen">
-    <!--inloggen zonder band: _3
-        inloggen met groene band: _3_groen
-        inloggen met oranje band: _3_oranje
-        inloggen met zwarte band: _3_zwart-->
+    android:background="@drawable/background_profiel_10">
+    <!--inloggen zonder band: _0
+        inloggen met groene band: _5
+        inloggen met oranje band: _10
+        inloggen met zwarte band: _15-->
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="top">
+    <!--Kader profiel-->
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="160dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@drawable/custom_trainingen"
+        android:id="@+id/tvKader"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"/>
+
+    <!--Welkom, gebruiker-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:id="@+id/tvWelcome"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="35dp" />
+
+    <!--Welkom, gebruiker-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome_name"
+        android:textSize="20dp"
+        android:id="@+id/tvWelcomeName"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_toRightOf="@id/tvWelcome"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="5dp"/>
+
+    <!--training tegoed-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/trainingen"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:id="@+id/tvTrainingen"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tegoed"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:id="@+id/tvTegoed"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:layout_marginTop="115dp"
+        android:layout_marginLeft="35dp" />
+
+    <!-- trainingen saldo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/saldo"
+        android:textSize="45dp"
+        android:textColor="#fff"
+        android:id="@+id/tvSaldo"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:layout_toRightOf="@id/tvTrainingen"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="5dp"/>
+
+    <!-- RAUW tot en met-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/verloop_beschrijving"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:id="@+id/tvVerloopBeschrijving"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="35dp" />
+
+    <!-- datum verloop rittenband -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/verloop_datum"
+        android:textSize="18dp"
+        android:textColor="#fff"
+        android:id="@+id/tvVerloopDatum"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="35dp" />
+
+
+    <!-- profile pic -->
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/imagePic"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/text_box_wijzig"/>
+
+    <!--button: change profile pic-->
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:id="@+id/buttonChangePic"
+        android:background="@drawable/custom_instellingen"
+        android:text="@string/change_pic"
+        android:textSize="15dp"
+        android:textColor="#fff"
+        android:layout_below="@+id/imagePic"
+        android:layout_alignRight="@+id/imagePic"
+        android:layout_alignEnd="@+id/imagePic"
+        android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvToTraining"
+            android:text="@string/naar_trainingen"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/buttonChangePic"
+            android:layout_alignRight="@+id/buttonChangePic"
+            android:layout_alignEnd="@+id/buttonChangePic"
+            android:layout_marginTop="10dp" />
+    </RelativeLayout>
 
 </RelativeLayout>

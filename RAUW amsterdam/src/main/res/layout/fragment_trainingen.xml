@@ -3,7 +3,519 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background_2">
+    android:background="@drawable/background_trainingen"
+    android:gravity="top">
+
+
+
+
+
+    <!--event #1-->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout2">
+
+        <!--hoofdkader trainingen-->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTrainingInfo"
+            android:background="@drawable/custom_trainingen"
+            android:padding="25dp"/>
+
+        <!--date - month-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateMonth"
+            android:text="@string/t1_date_month"
+            android:fontFamily="sans-serif"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"/>
+
+        <!--date - day-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateDay"
+            android:text="@string/t1_date_day"
+            android:fontFamily="sans-serif"
+            android:textSize="38dp"
+            android:textColor="#fff"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="16dp"/>
+
+        <!--type training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTypeTraining"
+            android:text="@string/t1_type_training"
+            android:fontFamily="sans-serif"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:layout_marginTop="18dp"
+            android:layout_alignStart="@+id/tvDayTraining" />
+
+        <!--day training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDayTraining"
+            android:text="@string/t1_day_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#ffa400"
+            android:layout_marginLeft="70dp"
+            android:layout_alignBaseline="@+id/tvDateDay"/>
+
+        <!--tussenvoegsel //-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTrainingTussenvoegsel"
+            android:text="@string/t1_training_tussenvoegsel"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvDayTraining"
+            android:layout_alignBaseline="@id/tvDayTraining"/>
+
+        <!--time training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeTraining"
+            android:text="@string/t1_time_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvTrainingTussenvoegsel"
+            android:layout_alignBaseline="@id/tvTrainingTussenvoegsel"/>
+
+        <!--doorklik symbool evenement-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvKnowMore"
+            android:text="@string/t1_know_more"
+            android:fontFamily="sans-serif"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/tvDateMonth"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <!--subkader trainingen-->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonTrainingLocation"
+            android:background="@drawable/custom_trainingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo"
+            android:layout_marginTop="5dp"/>
+
+        <!--location marker-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivLocationMarker"
+            android:background="@drawable/ic_location_marker"
+            android:layout_alignTop="@+id/buttonTrainingLocation"
+            android:layout_alignLeft="@+id/tvDateDay"
+            android:layout_marginTop="5dp"/>
+
+        <!--location training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocationTraining"
+            android:text="@string/t1_location_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignTop="@+id/ivLocationMarker"
+            android:layout_toRightOf="@+id/ivLocationMarker"
+            android:layout_marginLeft="3dp"/>
+
+        <!--knop aanmelden trainingen-->
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonJoinTraining"
+            android:background="@drawable/custom_instellingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"/>
+
+        <!--aanmelden-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvJoinTraining"
+            android:text="@string/t1_join_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tvLocationTraining"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+
+    <!--event #2-->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/relativeLayout2">
+
+        <!--hoofdkader trainingen-->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTrainingInfo2"
+            android:background="@drawable/custom_trainingen"
+            android:padding="30dp"/>
+
+        <!--date - month-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateMonth2"
+            android:text="@string/t2_date_month"
+            android:fontFamily="sans-serif"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"/>
+
+        <!--date - day-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateDay2"
+            android:text="@string/t2_date_day"
+            android:fontFamily="sans-serif"
+            android:textSize="38dp"
+            android:textColor="#fff"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="16dp"/>
+
+        <!--type training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTypeTraining2"
+            android:text="@string/t2_type_training"
+            android:fontFamily="sans-serif"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:layout_marginTop="18dp"
+            android:layout_alignStart="@+id/tvDayTraining2" />
+
+        <!--day training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDayTraining2"
+            android:text="@string/t2_day_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#ffa400"
+            android:layout_marginLeft="70dp"
+            android:layout_alignBaseline="@+id/tvDateDay2"/>
+
+        <!--tussenvoegsel //-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTrainingTussenvoegsel2"
+            android:text="@string/t2_training_tussenvoegsel"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvDayTraining2"
+            android:layout_alignBaseline="@id/tvDayTraining2"/>
+
+        <!--time training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeTraining2"
+            android:text="@string/t2_time_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvTrainingTussenvoegsel2"
+            android:layout_alignBaseline="@id/tvTrainingTussenvoegsel2"/>
+
+        <!--doorklik symbool evenement-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvKnowMore2"
+            android:text="@string/t2_know_more"
+            android:fontFamily="sans-serif"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/tvDateMonth2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <!--subkader trainingen-->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonTrainingLocation2"
+            android:background="@drawable/custom_trainingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo2"
+            android:layout_marginTop="5dp"/>
+
+        <!--location marker-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivLocationMarker2"
+            android:background="@drawable/ic_location_marker"
+            android:layout_alignTop="@+id/buttonTrainingLocation2"
+            android:layout_alignLeft="@+id/tvDateDay2"
+            android:layout_marginTop="5dp"/>
+
+        <!--location training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocationTraining2"
+            android:text="@string/t2_location_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignTop="@+id/ivLocationMarker2"
+            android:layout_toRightOf="@+id/ivLocationMarker2"
+            android:layout_marginLeft="3dp"/>
+
+        <!--knop aanmelden trainingen-->
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonJoinTraining2"
+            android:background="@drawable/custom_instellingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo2"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"/>
+
+        <!--aanmelden-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvJoinTraining2"
+            android:text="@string/t2_join_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tvLocationTraining2"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <!--event #3-->
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/relativeLayout4"
+        android:layout_below="@+id/relativeLayout3">
+
+        <!--hoofdkader trainingen-->
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonTrainingInfo3"
+            android:background="@drawable/custom_trainingen"
+            android:padding="30dp"/>
+
+        <!--date - month-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateMonth3"
+            android:text="@string/t3_date_month"
+            android:fontFamily="sans-serif"
+            android:textSize="17dp"
+            android:textColor="#fff"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"/>
+
+        <!--date - day-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDateDay3"
+            android:text="@string/t3_date_day"
+            android:fontFamily="sans-serif"
+            android:textSize="38dp"
+            android:textColor="#fff"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="16dp"/>
+
+        <!--type training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTypeTraining3"
+            android:text="@string/t3_type_training"
+            android:fontFamily="sans-serif"
+            android:textSize="22dp"
+            android:textColor="#fff"
+            android:layout_marginTop="18dp"
+            android:layout_alignStart="@+id/tvDayTraining3" />
+
+        <!--day training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDayTraining3"
+            android:text="@string/t3_day_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#ffa400"
+            android:layout_marginLeft="70dp"
+            android:layout_alignBaseline="@+id/tvDateDay3"/>
+
+        <!--tussenvoegsel //-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTrainingTussenvoegsel3"
+            android:text="@string/t3_training_tussenvoegsel"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvDayTraining3"
+            android:layout_alignBaseline="@id/tvDayTraining3"/>
+
+        <!--time training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimeTraining3"
+            android:text="@string/t3_time_training"
+            android:fontFamily="sans-serif"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tvTrainingTussenvoegsel3"
+            android:layout_alignBaseline="@id/tvTrainingTussenvoegsel3"/>
+
+        <!--doorklik symbool evenement-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvKnowMore3"
+            android:text="@string/t3_know_more"
+            android:fontFamily="sans-serif"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_below="@+id/tvDateMonth3"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+        <!--subkader trainingen-->
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonTrainingLocation3"
+            android:background="@drawable/custom_trainingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo3"
+            android:layout_marginTop="5dp"/>
+
+        <!--location marker-->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/ivLocationMarker3"
+            android:background="@drawable/ic_location_marker"
+            android:layout_alignTop="@+id/buttonTrainingLocation3"
+            android:layout_alignLeft="@+id/tvDateDay3"
+            android:layout_marginTop="5dp"/>
+
+        <!--location training-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvLocationTraining3"
+            android:text="@string/t3_location_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignTop="@+id/ivLocationMarker3"
+            android:layout_toRightOf="@+id/ivLocationMarker3"
+            android:layout_marginLeft="3dp"/>
+
+        <!--knop aanmelden trainingen-->
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:id="@+id/buttonJoinTraining3"
+            android:background="@drawable/custom_instellingen"
+            android:padding="0dp"
+            android:layout_below="@id/buttonTrainingInfo3"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"/>
+
+        <!--aanmelden-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvJoinTraining3"
+            android:text="@string/t3_join_training"
+            android:fontFamily="sans-serif"
+            android:textSize="13dp"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/tvLocationTraining3"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <!--image naar volgende week-->
+    <ImageButton
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/ibNextWeek"
+        android:background="@drawable/ic_next_week"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+
 
 
 </RelativeLayout>

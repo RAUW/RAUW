@@ -43,10 +43,41 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="180dp">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/remember_login"
+            android:textColorHint="#fff"
+            android:background="#000"
+            android:ems="10"
+            android:id="@+id/fieldBirthDay"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="10dp"
+            android:textSize="15dp"
+            android:layout_marginRight="36dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <CheckBox
+            android:id="@+id/checkRememberMe"
+            android:button="@null"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:background="@drawable/chk_indicator"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"/>
+
         <!--login button-->
         <Button
         android:layout_width="145dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
         android:text="@string/login_name"
         android:id="@+id/buttonLogin"
         android:background="@drawable/custom"
@@ -90,6 +121,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="10dp" />
+
+
 
     </RelativeLayout>
 

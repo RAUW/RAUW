@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_edit" >
+
+    <!--telefoonnummer-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="phone"
+        android:hint="@string/phone_number_wijzig"
+        android:maxLength="10"
+        android:textColorHint="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/fieldPhoneNumber"
+        android:background="@drawable/text_box_wijzig"
+        android:layout_marginTop="110dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff" />
+
+    <!--email-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/login_hint_wijzig"
+        android:textColorHint="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/fieldRegisterEmail"
+        android:background="@drawable/text_box_wijzig"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff" />
+
+    <!--Button wijzig bovenstaand (06 en/of email)-->
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="210dp"
+        android:text="@string/knop_wijzig_gegevens"
+        android:id="@+id/buttonWijzigEmail"
+        android:background="@drawable/custom_instellingen"
+        android:textColor="#fff"
+        android:textSize="15dp"
+        android:singleLine="false"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:onClick="clickLogin"
+        android:layout_alignRight="@id/fieldRegisterEmail" />
+
+    <!--password oud-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_wijzig_oud"
+        android:textColorHint="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/fieldPasswordOud"
+        android:background="@drawable/text_box_wijzig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff" />
+
+    <!--password nieuw-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_wijzig_nieuw"
+        android:textColorHint="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/fieldPasswordNieuw"
+        android:background="@drawable/text_box_wijzig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff" />
+
+    <!--password nieuw repeat-->
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        android:hint="@string/password_wijzig_nieuw_repeat"
+        android:textColorHint="#D6D6D6"
+        android:ems="10"
+        android:id="@+id/fieldPasswordNieuwRepeat"
+        android:background="@drawable/text_box_wijzig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#fff" />
+
+        <!--Button wijzig wachtwoord-->
+        <Button
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:text="@string/knop_wijzig_wachtwoord"
+            android:id="@+id/buttonWijzigWachtwoord"
+            android:background="@drawable/custom_instellingen"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:singleLine="false"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginTop="410dp"
+            android:layout_alignRight="@id/fieldPasswordNieuwRepeat"
+            android:onClick="clickLogin"/>
+
+        <!--terug naar MainActivity-->
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:text="@string/back_login"
+            android:id="@+id/buttonBackLogin"
+            android:background="@drawable/custom_instellingen"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:singleLine="false"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="clickBackLogin"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
