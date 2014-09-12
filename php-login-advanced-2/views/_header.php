@@ -21,12 +21,7 @@
         input[type=text],
         input[type=password],
         input[type=submit],
-        input[type=email],
-        input[type=date],
-        input[type=tel],
-        input[type=text],
-        input[type=text],
-        input[type=text] {
+        input[type=email] {
             display: block;
             margin-bottom: 15px;
         }

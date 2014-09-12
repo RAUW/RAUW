@@ -64,7 +64,7 @@ define("COOKIE_SECRET_KEY", "");
 define("EMAIL_USE_SMTP", false);
 define("EMAIL_SMTP_HOST", "ssl://smtp.upcmail.nl");
 define("EMAIL_SMTP_AUTH", true);
-define("EMAIL_SMTP_USERNAME", "info@rauwamsterdam.com");
+define("EMAIL_SMTP_USERNAME", "");
 define("EMAIL_SMTP_PASSWORD", "");
 define("EMAIL_SMTP_PORT", 465);
 define("EMAIL_SMTP_ENCRYPTION", "ssl");
@@ -74,10 +74,10 @@ define("EMAIL_SMTP_ENCRYPTION", "ssl");
  * Set the absolute URL to password_reset.php, necessary for email password reset links
  */
 define("EMAIL_PASSWORDRESET_URL", "http://rauwamsterdam.com/php-login-advanced-2/password_reset.php");
-define("EMAIL_PASSWORDRESET_FROM", "no-reply@rauwamsterdam.com");
-define("EMAIL_PASSWORDRESET_FROM_NAME", "RAUW amsterdam");
-define("EMAIL_PASSWORDRESET_SUBJECT", "Wachtwoord reset voor RAUW-account");
-define("EMAIL_PASSWORDRESET_CONTENT", "Klik op onderstaande link om je wachtwoord te resetten:\n\nMocht je vragen hebben, contact ons dan via www.rauwamsterdam.com.\n\n");
+define("EMAIL_PASSWORDRESET_FROM", "no-reply@example.com");
+define("EMAIL_PASSWORDRESET_FROM_NAME", "My Project");
+define("EMAIL_PASSWORDRESET_SUBJECT", "Password reset for PROJECT XY");
+define("EMAIL_PASSWORDRESET_CONTENT", "Please click on this link to reset your password:");
 
 /**
  * Configuration for: verification email data
@@ -85,9 +85,9 @@ define("EMAIL_PASSWORDRESET_CONTENT", "Klik op onderstaande link om je wachtwoor
  */
 define("EMAIL_VERIFICATION_URL", "http://www.rauwamsterdam.com/php-login-advanced-2/register.php");
 define("EMAIL_VERIFICATION_FROM", "no-reply@rauwamsterdam.com");
-define("EMAIL_VERIFICATION_FROM_NAME", "RAUW amsterdam");
-define("EMAIL_VERIFICATION_SUBJECT", "Activeer je RAUW-account");
-define("EMAIL_VERIFICATION_CONTENT", "Klik op onderstaande link om je account te activeren.\n\nMocht je vragen hebben, contact ons dan via www.rauwamsterdam.com.\n\n");
+define("EMAIL_VERIFICATION_FROM_NAME", "My Project");
+define("EMAIL_VERIFICATION_SUBJECT", "Account activation for PROJECT XY");
+define("EMAIL_VERIFICATION_CONTENT", "Please click on this link to activate your account:");
 
 /**
  * Configuration for: Hashing strength

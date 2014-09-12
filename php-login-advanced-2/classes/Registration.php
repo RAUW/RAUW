@@ -33,7 +33,7 @@ class Registration
 
         // if we have such a POST request, call the registerNewUser() method
         if (isset($_POST["register"])) {
-            $this->registerNewUser($_POST['user_email'], $_POST['user_password_new'], $_POST['user_password_repeat'], $_POST['first_name'], $_POST['middle_name'], $_POST['last_name'], $_POST['telephone_number'], $_POST['date_of_birth']);
+            $this->registerNewUser($_POST['user_email'], $_POST['user_password_new'], $_POST['user_password_repeat']);
         // if we have such a GET request, call the verifyNewUser() method
         } else if (isset($_GET["id"]) && isset($_GET["verification_code"])) {
             $this->verifyNewUser($_GET["id"], $_GET["verification_code"]);
@@ -71,7 +71,7 @@ class Registration
      * handles the entire registration process. checks all error possibilities, and creates a new user in the database if
      * everything is fine
      */
-    private function registerNewUser($user_email, $user_password, $user_password_repeat, $first_name, $middle_name, $last_name, $telephone_number, $date_of_birth)
+    private function registerNewUser($user_email, $user_password, $user_password_repeat)
     {
         // we just remove extra space on username and email
         $user_email = trim($user_email);
@@ -82,8 +82,6 @@ class Registration
             $this->errors[] = MESSAGE_EMAIL_EMPTY;
         } elseif (strlen($user_email) > 64) {
             $this->errors[] = MESSAGE_EMAIL_TOO_LONG;
-        } elseif (strlen($telephone_number) > 10) {
-            $this->errors[] = MESSAGE_PHONE_TOO_LONG;
         } elseif (!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
             $this->errors[] = MESSAGE_EMAIL_INVALID;
         } elseif (empty($user_password) || empty($user_password_repeat)) {
@@ -121,14 +119,9 @@ class Registration
                 $user_activation_hash = sha1(uniqid(mt_rand(), true));
 
                 // write new users data into database
-                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO gebruikers (user_password_hash, user_email, first_name, middle_name, last_name, telephone_number, date_of_birth, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES(:user_password_hash, :user_email, :first_name, :middle_name, :last_name, :telephone_number, :date_of_birth, :user_activation_hash, :user_registration_ip, now())');
+                $query_new_user_insert = $this->db_connection->prepare('INSERT INTO gebruikers (user_password_hash, user_email, user_activation_hash, user_registration_ip, user_registration_datetime) VALUES(:user_password_hash, :user_email, :user_activation_hash, :user_registration_ip, now())');
                 $query_new_user_insert->bindValue(':user_password_hash', $user_password_hash, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_email', $user_email, PDO::PARAM_STR);
-                $query_new_user_insert->bindValue(':first_name', $first_name, PDO::PARAM_STR);
-                $query_new_user_insert->bindValue(':middle_name', $middle_name, PDO::PARAM_STR);
-                $query_new_user_insert->bindValue(':last_name', $last_name, PDO::PARAM_STR);
-                $query_new_user_insert->bindValue(':telephone_number', $telephone_number, PDO::PARAM_STR);
-                $query_new_user_insert->bindValue(':date_of_birth', $date_of_birth, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_activation_hash', $user_activation_hash, PDO::PARAM_STR);
                 $query_new_user_insert->bindValue(':user_registration_ip', $_SERVER['REMOTE_ADDR'], PDO::PARAM_STR);
                 $query_new_user_insert->execute();
@@ -195,7 +188,7 @@ class Registration
         $link = EMAIL_VERIFICATION_URL.'?id='.urlencode($user_id).'&verification_code='.urlencode($user_activation_hash);
 
         // the link to your register.php, please set this value in config/email_verification.php
-        $mail->Body = EMAIL_VERIFICATION_CONTENT.$link;
+        $mail->Body = EMAIL_VERIFICATION_CONTENT.' '.$link;
 
         if(!$mail->Send()) {
             $this->errors[] = MESSAGE_VERIFICATION_MAIL_NOT_SENT . $mail->ErrorInfo;

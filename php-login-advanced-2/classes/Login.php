@@ -66,7 +66,6 @@ class Login
         if (isset($_GET["logout"])) {
             $this->doLogout();
 
-
         // if user has an active session on the server
         } elseif (!empty($_SESSION['user_email']) && ($_SESSION['user_logged_in'] == 1)) {
             $this->loginWithSessionData();
@@ -202,7 +201,6 @@ class Login
                         // write user data into PHP SESSION [a file on your server]
                         $_SESSION['user_id'] = $result_row->user_id;
                         $_SESSION['user_email'] = $result_row->user_email;
-                        $_SESSION['first_name'] = $result_row->first_name;
                         $_SESSION['user_logged_in'] = 1;
 
                         // declare user id, set the login status to true
@@ -276,7 +274,6 @@ class Login
                 // write user data into PHP SESSION [a file on your server]
                 $_SESSION['user_id'] = $result_row->user_id;
                 $_SESSION['user_email'] = $result_row->user_email;
-                $_SESSION['first_name'] = $result_row->first_name;
                 $_SESSION['user_logged_in'] = 1;
 
                 // declare user id, set the login status to true
@@ -569,7 +566,7 @@ class Login
         $mail->Subject = EMAIL_PASSWORDRESET_SUBJECT;
 
         $link    = EMAIL_PASSWORDRESET_URL.'?user_email='.urlencode($user_email).'&verification_code='.urlencode($user_password_reset_hash);
-        $mail->Body = EMAIL_PASSWORDRESET_CONTENT.$link;
+        $mail->Body = EMAIL_PASSWORDRESET_CONTENT . ' ' . $link;
 
         if(!$mail->Send()) {
             $this->errors[] = MESSAGE_PASSWORD_RESET_MAIL_FAILED . $mail->ErrorInfo;
